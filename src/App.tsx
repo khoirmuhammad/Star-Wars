@@ -1,18 +1,22 @@
 import "./App.css";
-import { Route, HashRouter, Routes } from "react-router-dom";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 import PeopleListPage from "./pages/People/PeopleListPage";
 import PeopleDetailPage from "./pages/People/PeopleDetailPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div>
         <Routes>
-          <Route path="/Star-Wars" element={<PeopleListPage />} />
-          <Route path="/Star-Wars/people/:id" element={<PeopleDetailPage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/people" element={<PeopleListPage />} />
+          <Route path="/people/:id" element={<PeopleDetailPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

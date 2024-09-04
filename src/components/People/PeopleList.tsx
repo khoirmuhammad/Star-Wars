@@ -35,7 +35,7 @@ const PeopleList: React.FC<PeopleListProps> = ({
               <td>{person.birth_year}</td>
               <td>{person.gender}</td>
               <td>
-                <Link to={`/Star-Wars/people/${person.id}`} className="btn btn-primary btn-sm">
+                <Link to={`/people/${person.id}`} className="btn btn-primary btn-sm">
                   View Details
                 </Link>
               </td>
