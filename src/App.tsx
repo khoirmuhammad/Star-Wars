@@ -8,8 +8,8 @@ function App() {
     <BrowserRouter>
       <div>
         <Routes>
-          <Route path="/" element={<PeopleListPage />} />
-          <Route path="/people/:id" element={<PeopleDetailPage />} />
+          <Route path="/Star-Wars" element={<PeopleListPage />} />
+          <Route path="/Star-Wars/people/:id" element={<PeopleDetailPage />} />
         </Routes>
       </div>
     </BrowserRouter>
