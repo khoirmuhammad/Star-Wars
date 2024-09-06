@@ -8,6 +8,7 @@ const HomePage = () => {
         <p>
       Please click to the{' '}
       <Link to="/people">LINK</Link>
+      , To go to the people list
     </p>
       </div>
     );
