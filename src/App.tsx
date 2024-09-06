@@ -7,7 +7,7 @@ import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <BrowserRouter basename="Star-Wars">
+    <BrowserRouter>
       <div>
         <Routes>
           <Route path="/" element={<HomePage />} />
